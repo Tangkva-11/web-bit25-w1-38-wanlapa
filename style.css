@@ -1,0 +1,39 @@
+body{
+    font-family: 'Mali', cursive;
+    background: linear-gradient(
+        135deg,
+        #ffe6f2,
+        #f3e8ff,
+        #e0f7ff
+    );
+    min-height: 100vh;
+}
+
+h1{
+    text-align: center;
+    color: #ff69b4;
+}
+
+a{
+    color: #753561;
+    text-decoration: none;
+}
+
+a:hover{
+        color: #ff69b4;
+}
+
+.result{
+    background-color: #ffe6f2;
+    width: 320px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.result h2{
+    color: #d63384;
+    margin-top: 0;
+}

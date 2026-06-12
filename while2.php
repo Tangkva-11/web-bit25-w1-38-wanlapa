@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <h1 style="color: purple;"
     >
 
@@ -20,11 +19,11 @@
 
     <div style="font-size: 30px; text-align: center;">
 
-        <a href="while2.php">While Loop</a>
+        <a href="index.php">For Loop</a>
 
     </div>
 
-    <div style="color: #90286f; font-size: 30px; text-align: center;">
+   <div style="color: #90286f; font-size: 30px; text-align: center;">
 
         <form action="">
             <label for="">เลขแม่สูตรคูณ</label> <br>
@@ -35,19 +34,21 @@
         </form>
 
     </div>
-
+    
     <?php
         if(isset($_GET["num"])){
-        $num = $_GET["num"];
+            $num = $_GET["num"];
 
-        echo "<div class='result'>";
-        echo "<h2>สูตรคูณแม่ $num</h2>";
+            echo "<div class='result'>";
+            echo "<h2>สูตรคูณแม่ $num</h2>";
 
-        for($i = 1; $i <= 12; $i++){
-            echo "$num x $i = " . ($num * $i) . "<br>";
-        }
+            $i = 1;
+            while($i <= 12){
+                echo "$num x $i = " . ($num * $i) . "<br>";
+                $i++;
+            }
 
-        echo "</div>";
+            echo "</div>";
         }
     ?>
 </body>
